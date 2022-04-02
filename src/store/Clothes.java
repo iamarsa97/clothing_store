@@ -11,11 +11,10 @@ public abstract class Clothes<T> {
     protected T size;
     protected ClothingType type;
 
-
     //constructor
-    protected Clothes(String name, String brand, double price, String color,T size) throws InvalidSizeException {
+    protected Clothes(String name, String brand, double price, String color, T size) throws InvalidSizeException {
 
-        if(!checkSize(size)) throw new InvalidSizeException("Wrong size");
+        if (!checkSize(size)) throw new InvalidSizeException("Wrong size");
 
         this.name = name;
         this.brand = brand;
@@ -28,20 +27,27 @@ public abstract class Clothes<T> {
     //abstract method to check if size is valid
     protected abstract boolean checkSize(T size);
 
-
     //return the discount amount
-    public double applyDiscount(int percentage){
-        return  price * percentage/100;
+    public double applyDiscount(int percentage) {
+        return price * percentage / 100;
     }
 
     //getters
-    public String getName(){ return name; }
+    public String getName() {
+        return name;
+    }
 
-    public String getBrand() { return brand; }
+    public String getBrand() {
+        return brand;
+    }
 
-    public double getPrice() { return price; }
+    public double getPrice() {
+        return price;
+    }
 
-    public ClothingType getType() { return type; }
+    public ClothingType getType() {
+        return type;
+    }
 
     //public String getColor() { return color; }
 

@@ -76,7 +76,7 @@ public class Cashier {
             cart.add(new Shirt("Blue Cotton Shirt", "BrandS", 18.5, "Blue", "XL"));
             cart.add(new Shoes("Black mamba", "BrandS", 79.99, "Black", 43));
             cart.add(new Trousers("Cotton Trousers", "BrandL", 25, "Blue", 42));
-            cart.add(new Jacket("Leather jacket","BrandX",199.99,"Brown",44));
+            cart.add(new Jacket("Leather jacket", "BrandX", 199.99, "Brown", 44));
 
             cashier.printReceipt(cart, LocalDate.now(), LocalTime.now());
 
