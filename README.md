@@ -1,2 +1,3 @@
 # clothing_store
-Clothing store app
+Clothing store
+(main in Cashier.java)
